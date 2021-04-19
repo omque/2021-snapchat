@@ -62,6 +62,7 @@ body{
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
+    
 }
 
 /* Controls the padding of the menus and keeps things relatively centered */
@@ -93,4 +94,9 @@ body{
 .profile_photo:hover {
     background:url("images/profile02.png") no-repeat;
     
+}
+
+.img {
+    width: 300px;
+    height: 300px;
 }
