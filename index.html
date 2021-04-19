@@ -7,7 +7,9 @@
 // Purpose: Application for Omair Qazi as part of the 2021 LA Tech.org/Snapchat Engineering Assessment.
 //
 //
-// Description: A simple online portfolio using HTML, CSS, and GitHub Pages. Includes a mockup (see GitHub Repository). Uses resources from "Interneting Is Hard" (https://www.internetingishard.com/).
+// Description: A simple online portfolio using HTML, CSS, and GitHub Pages. Includes a mockup (see GitHub Repository). Uses resources from: 
+// "Interneting Is Hard" (https://www.internetingishard.com/)
+// "How TO - Collapse" (https://www.w3schools.com/howto/howto_js_collapsible.asp).
 //
 //
 // Date Modified: 
@@ -22,35 +24,57 @@
     <!-- Title -->
     <title>2021 About Omair Qazi</title>
     
-    <!-- CSS Stylesheet -->
+    <!-- Omair's CSS Stylesheet -->
     <link rel='stylesheet' href='style.css' />
+
+    <!-- Google Font Stylesheet -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
     </head>
     <body>
     
     <!-- Heading and Primary Photo -->
     <h1>Hello!</h1>
+    
+    <div class="menus">
+        
+        <!-- About Menu -->
+        <button type="button" class="collapsible" >About Me</button>
+        <div class="content">
+            <h2>Hi, I'm Omair!</h2>
+            <p>I'm a Computer Science student at Santa Monica College and Sacramento City College and I want to be a different kind of engineer.</p>
+            <p>Technology and people are too far apart. Engineers can't see how their software could solve real problems in our world. Companies miss the bigger picture and create answers to questions nobody asked. Let's do better!</p>
+            <p>I love coding (in C++...HTML was a fun new challenge!), but it's the last thing I do. Coding is about solving problems and working together. I love problems, and I love working together. I like to break them down, investigate, research, and find out what matters.</p> <p>Then I like to work with others who are also in it and see if/how software can help improve the situation.</p>
+            <p>You have to be a great detective to create good technical answers while still understanding the big picture - which I do pretty well!</p>
+            <p>I am devoted to my community and just won a Cyber Security Competition for Northern California as Team Captain of our CyberSecurity Club this weekend!</p>
+            <p>I learn more from other people than by myself, and I want to do the same at Snap.</p>
+            <p>You can see my resume here:</p>
+            <p>Here's my Instagram!: </p>
+            <p>I have a viral TikTok with over 24K views (don't worry, nothing embarrasing!)</p>
+        </div>
 
-    <!-- About Menu -->
-    <button type="button" class="collapsible">About Me</button>
-    <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <!-- Project Menu -->
+        <button type="button" class="collapsible">Projects</button>
+        <div class="content">
+            <p>I'm still a student, but I want to make sure that I'm learning my skills the way that will be valuable in the real world.</p>
+            <p>I am cautious about commenting and documentation.</p>
+            <p>I love modularizing my code.</p>
+            <p>I'm not very good at HTML/CSS/JavaScript (yet!). I chose to learn the basics for this assessment from <a href="https://www.internetingishard.com/" target="_blank">Interneting Is Hard</a></p>
+            <p>I used this assessment as a way to force myself to learn something I was trying to avoid, because I like real-world challenges, but sometimes I procrastinate on things that seem very complex. That's when I like to break it down and start small.</p>
+            <p>I want to learn how real programmers collaborate and build great things like Snapchat.</p>
+        </div>
+
+        <!-- AR Menu -->
+        <button type="button" class="collapsible">Something Fun :)</button>
+        <div class="content">
+            <p>I wanted to challenge myself.</p>
+        </div>
+
     </div>
 
-    <!-- Project Menu -->
-    <button type="button" class="collapsible">Projects</button>
-    <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
 
-    <!-- AR Menu -->
-    <button type="button" class="collapsible">Something Fun :)</button>
-    <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-
-
-    <!-- JavaScript: Selects Class element to show or hide content underneath menu -->
+    <!-- JavaScript: Selects Class element to show or hide content underneath menu. Source: W3C School: HowTO Collapse -->
     <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;
