@@ -15,6 +15,15 @@
 // Mod Reason: 
 */
 
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+/* Collapsible Menu Status: After */
+.active:after {
+    content: "\2212";
+}
 
 /* Style for collapsible menu row */
 .collapsible {
@@ -29,11 +38,6 @@
     font-size: 15px;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-    background-color: #555;
-}
-
 /* Collapsible Menu Status: Before */
 .collapsible:after {
     content: '\002B';
@@ -43,12 +47,6 @@
     margin-left: 5px;
 }
 
-
-/* Collapsible Menu Status: After */
-.active:after {
-    content: "\2212";
-}
-  
   
 /* Style the collapsible content. Note: hidden by default */
 .content {
